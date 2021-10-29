@@ -1,0 +1,96 @@
+/*reset css*/
+
+/*모든 태그요소들의 여백을 초기화*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*제목태그의 크기를 body에서 맞춘 크기와 동일하게 변경*/
+/*h1,h2,h3,h4,h5,h6 {  font-weight: normal;}*/
+
+/*목록(리스트들의) 기호를 안보이게 처리*/
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/*링크의 밑줄을 제거*/
+a {
+  text-decoration: none;
+}
+
+/*인터넷 익스플로러에서 img태그에 링크걸었을때 나오는 테두리선 제거*/
+img {
+  border: none;
+}
+
+/*테이블 태그 칸 사이 간격들을 없애주게 처리*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*body 태그안에서 쓰는 기본 글꼴을 초기화 - 본인이 사용하는 시스템 폰트중에서 아래 나와있는 폰트중 하나를 보여줌 윈도우는 돋움 맥은 헬베티카 애플고딕 그리고 앞에 폰트들이 없을 경우에는 sans-serif로 보여줌*/
+
+/*줄간격(행간은)글씨크기와 똑같은 비율로 맞춤 1배율 = 즉 12px*/
+html,
+body {
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
+  font-size: 14px;
+  line-height: 1;
+  color: #333;
+}
+html {
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+}
+
+input {
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
+}
+
+button:focus {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  cursor: pointer;
+  display: none;
+}
+
+.label_box input[type="radio"] {
+  display: none;
+}
+
+/*텍스트아리아 기본설정*/
+textarea:read-only {
+  border: 0;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+/*table data_picker calendar button*/
+.vdp-datepicker {
+  /*text-align: center !important;*/
+}
+
+td .vdp-datepicker input {
+  border: 1px solid #ddd !important;
+}
+.date_none_picker span.vdp-datepicker__calendar-button {
+  display: none;
+}
+
+/*input autofill*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #f1f1f1 inset !important;
+  -webkit-text-fill-color: #000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}

@@ -1,0 +1,13 @@
+div.admin_wrapper,
+section.admin_wrapper {
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+}
+.main_section {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.contents_box {
+  padding: 20px;
+}

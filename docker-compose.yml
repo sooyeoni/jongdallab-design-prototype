@@ -1,0 +1,5 @@
+version: "3"
+services:
+  web:
+    image: "jdlab.azurecr.io/deepch-design:dev"
+    build: .
